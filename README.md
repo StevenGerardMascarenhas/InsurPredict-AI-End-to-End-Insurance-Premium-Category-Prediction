@@ -121,7 +121,7 @@ Step 5. 5. EC2 Preparation
 
 • sudo systemctl enable docker
 
-# Grant permissions (Requires re-login to take effect)
+• Grant permissions (Requires re-login to take effect)
 
 • sudo usermod -aG docker $USER && exit
 
