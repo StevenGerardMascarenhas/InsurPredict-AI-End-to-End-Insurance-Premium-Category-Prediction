@@ -1,11 +1,12 @@
 
-This final README.md is tailored specifically to the frontend interface shown in your images. It highlights the full input field set (including Occupation, City, and Smoker Status) and the exact classification output from your model.
 
 🚀 InsurPredict AI: End-to-End Insurance Premium Category Prediction
 InsurPredict AI is a production-grade Machine Learning application that categorizes health insurance risks into premium tiers. This project demonstrates a full-stack ML deployment featuring a FastAPI backend, a Streamlit frontend, and containerization via Docker for cloud deployment on AWS EC2.
 
 🏗️ System Architecture
 The application follows a decoupled architecture where the frontend and backend communicate via RESTful API requests.
+![aws diagram](https://github.com/user-attachments/assets/f4f5fec2-f016-4097-a87a-89eb4c6ea11c)
+
 
 The Workflow:
 User Input: Users enter demographic and health details (Age, Weight, Height, Income, Smoker Status, City, and Occupation) through the Streamlit UI.
