@@ -87,7 +87,7 @@ As seen in the application interface, the model performs granular risk assessmen
 
 • docker push <your-username>/insurpredict-ai:latest
 
- AWS EC2 Production Deployment
+🚀 AWS EC2 Production Deployment
  
 Follow these steps to deploy on a clean Ubuntu t2.micro instance:
 
