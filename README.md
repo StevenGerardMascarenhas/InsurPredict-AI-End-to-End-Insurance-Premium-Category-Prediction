@@ -5,6 +5,7 @@ InsurPredict AI is a production-grade Machine Learning application that categori
 
 🏗️ System Architecture
 The application follows a decoupled architecture where the frontend and backend communicate via RESTful API requests.
+
 ![aws diagram](https://github.com/user-attachments/assets/f4f5fec2-f016-4097-a87a-89eb4c6ea11c)
 
 
