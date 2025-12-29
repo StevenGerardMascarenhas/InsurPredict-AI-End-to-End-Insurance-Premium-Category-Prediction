@@ -5,12 +5,14 @@
 "InsurPredict AI is a production-grade, containerized Machine Learning pipeline that uses a Random Forest Classifier to predict health insurance premium categories (Low, Medium, or High) based on demographic and health data, featuring a full-stack deployment with a RESTful FastAPI backend, a Streamlit frontend  ,dockerized with docker and deployed on AWS EC2."
 
 🏗️ System Architecture
+
 The application follows a decoupled architecture where the frontend and backend communicate via RESTful API requests.
 
 ![aws diagram](https://github.com/user-attachments/assets/f4f5fec2-f016-4097-a87a-89eb4c6ea11c)
 
 
 The Workflow:
+
 • User Input: Users enter demographic and health details (Age, Weight, Height, Income, Smoker Status, City, and Occupation) through the Streamlit UI.
 
 • REST API: The frontend triggers a POST request to the FastAPI backend.
@@ -22,6 +24,7 @@ The Workflow:
 • Deployment: The entire environment is containerized with Docker and hosted on AWS EC2.
 
 🛠️ Tech Stack
+
 • Machine Learning: Scikit-Learn (Random Forest)
 
 • Backend API: FastAPI (Uvicorn)
