@@ -52,19 +52,48 @@ Medium: 0.45
 
 High: 0.08
 
-🚀 How to Run Locally
-1. Clone the repository
+🚀 Execution & Deployment Workflow
+1. Local Development
 Bash
+
+# Clone the repository
 git clone https://github.com/StevenGerardMascarenhas/InsurPredict-AI-End-to-End-Insurance-Premium-Category-Prediction.git
 cd InsurPredict-AI-End-to-End-Insurance-Premium-Category-Prediction
-2. Build and Run with Docker
-Bash
-# Build the Docker image
-docker build -t insurpredict-ai .
 
-# Run the container
+# Build and Run with Docker
+docker build -t insurpredict-ai .
 docker run -p 8501:8501 -p 8000:8000 insurpredict-ai
-Access the Frontend at http://localhost:8501 and API Docs at http://localhost:8000/docs
+2. Docker Hub Workflow (Pushing)
+Bash
+
+docker login
+docker tag insurpredict-ai:latest <your-username>/insurpredict-ai:latest
+docker push <your-username>/insurpredict-ai:latest
+3. AWS EC2 Production Deployment
+Follow these steps to deploy on a clean Ubuntu t2.micro instance:
+
+Step 1: System Preparation
+
+
+
+sudo apt update && sudo apt install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
+# Grant permissions (Requires re-login to take effect)
+sudo usermod -aG docker $USER && exit
+Step 2: Pull & Launch
+
+
+
+docker pull <your-username>/insurpredict-ai:latest
+docker run -d -p 8000:8000 -p 8501:8501 <your-username>/insurpredict-ai:latest
+Step 3: Security Group Configuration Ensure your AWS Inbound Rules allow:
+
+Port 22: SSH (Management)
+
+Port 8000: FastAPI (Backend)
+
+Port 8501: Streamlit (Frontend)
 
 👤 Author
 Steven Gerard Mascarenhas LinkedIn | GitHub
