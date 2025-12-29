@@ -1,6 +1,7 @@
 
 
-🚀 InsurPredict AI: End-to-End Insurance Premium Category Prediction
+#🚀 InsurPredict AI: End-to-End Insurance Premium Category Prediction
+
 "InsurPredict AI is a production-grade, containerized Machine Learning pipeline that uses a Random Forest Classifier to predict health insurance premium categories (Low, Medium, or High) based on demographic and health data, featuring a full-stack deployment with a RESTful FastAPI backend, a Streamlit frontend  ,dockerized with docker and deployed on AWS EC2."
 
 🏗️ System Architecture
